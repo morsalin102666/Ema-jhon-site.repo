@@ -9,7 +9,7 @@ const Product = (props) => {
     if (name.length === 17) {
         productName = name;
     }
-    else{
+    else {
         const names = name.slice(0, 17);
         productName = names;
     }
@@ -20,7 +20,7 @@ const Product = (props) => {
                 <div className='product'>
                     <img src={img} alt="Product image" />
                     <div className='product-text'>
-                        <h6 className='product-name'>{ productName }</h6>
+                        <h6 className='product-name'>{productName}</h6>
                         <span className='product-price'>Price : {price}</span>
                         <div className='paragraph-tag'>
                             <p className='product-p'>Manufacturer : {seller}</p>
@@ -31,7 +31,7 @@ const Product = (props) => {
             </div>
             <button onClick={() => eventHandeler(props.product)} className='cart-button'>
                 Add to Cart
-                <span className='card-icon'><i class="fa-sharp fa-solid fa-baby-carriage"></i></span>
+                <span className='card-icon'><i className="fa-sharp fa-solid fa-baby-carriage"></i></span>
             </button>
         </div>
     );
